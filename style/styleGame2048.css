@@ -4,23 +4,34 @@ body {
     background: #5c4f3ed0;
     height: 100%;
 }
-/* .main {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-} */
-hr {
-    width: 500px;
 }
+h2 {
+    margin: 20px 0px 0px 0px;
+}
+.hr {
+    max-width: 500px;
+
+    margin: 10px 0px;
+}
+.hr .hrFlower {
+    width: 20px;
+}
+
 #board {
-    max-width: 400px;
-    max-height: 400px;
+    width: 400px;
+    height: 400px;
 
     background: #cdc1b5;
     border: 6px solid rgb(52, 36, 26);
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .tile {
@@ -33,60 +44,323 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
+image {
+    width: 40px;
+}
 /* colored tiles */
 .x2 { 
-    background: #eee4da;
-    color: #727371;
+    background: #3e6746;
+    /* background: #eee4da; */
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
+    
 }
 .x4 { 
-    background: #ece0ca;
-    color: #727371;
+    background: #8fab73;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/21.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x8 { 
-    background: #f4b17a;
-    color: #727371;
+    background: #284126;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/18.png'); /* grib */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
-/* ##############################3 */
 .x16 {
     background: #725740;
-    color: #727371;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/19.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x32 {
-    background: #6fa7d5;
-    color: #727371;
+    background: #7aa5c9;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/22.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x64 {
-    background: #00fe40;
-    color: #727371;
-}
+    background: #d6e7ed;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/15.png'); /* list */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
+} 
 .x128 {
-    background: #7af4a7;
-    color: #727371;
+    background: #383a57;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/26.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x256 {
-    background: #f4f27a;
-    color: #727371;
+    background: #5e8563;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/27.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x512 {
-    background: #f47a7a;
-    color: #727371;
+    background: #b58585;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/30.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x1024 {
-    background: #f47aea;
-    color: #727371;
+    background: #625560;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/34.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x2048 {
     background: #8a7af4;
-    color: #727371;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/8.png'); /* star */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x4096 {
     background: #f4b17a;
-    color: #727371;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/33.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 .x8192 {
     background: #f4b17a;
-    color: #727371;
+    color: #1f1301;
+    font-weight: 900;
+    font-size: 40px;
+
+    background-image: url('../img/bgFlowers2048/allTile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 80px;
+    justify-content: end;
 }
 /* end colored tiles */
+
+/* button */
+.game_pad {
+    width: 240px;
+    height: 140px;
+    background: #796247da;
+
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 4px #564129 double;
+}
+#keyUp {
+    width: 40px;
+    height: 40px;
+    
+    position: absolute;
+    top: 0px;
+    left: 100px;
+
+    border-radius: 10px;
+    border: 4px double #493727;
+    
+    margin-top: 5px;
+    background: #947e66;
+}
+#keyRight {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 40px;
+    right: 0px;
+
+    border-radius: 10px;
+    border: 4px double #493727;
+    
+    margin-right: 5px;
+    background: #947e66;
+}
+#keyLeft {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 40px;
+    left: 0px;
+
+    border-radius: 10px;
+    border: 4px double #493727;
+
+    margin-left: 5px;
+    background: #947e66;
+}
+#keyDown {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 90px;
+    left: 100px;
+
+    border-radius: 10px;
+    border: 4px double #493727;
+
+    margin-bottom: 5px;
+    background: #947e66;
+}
+/* button end */
+
+
+@media (max-width: 600px) {
+    #board {
+        width: 304px;
+        height: 304px;
+    
+        background: #cdc1b5;
+        border: 6px solid rgb(52, 36, 26);
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tile {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #bbada0;
+    
+        font-size: 30px;
+    }
+    .hr .hrFlower {
+        width: 15px;
+    }
+
+
+    /* colored tiles */
+.x2 { 
+    background-size: 60px;
+}
+.x4 { 
+    background-size: 60px;
+}
+.x8 { 
+    background-size: 60px;
+}
+.x16 {
+    background-size: 60px;
+}
+.x32 {
+    background-size: 60px;
+}
+.x64 {
+    background-size: 60px;
+} 
+.x128 {
+    background-size: 60px;
+}
+.x256 {
+    background-size: 60px;
+}
+.x512 {
+    background-size: 60px;
+}
+.x1024 {
+    background-size: 60px;
+}
+.x2048 {
+    background-size: 60px;
+}
+.x4096 {
+    background-size: 60px;
+}
+.x8192 {
+    background-size: 60px;
+}
+/* end colored tiles */
+
+}
+
