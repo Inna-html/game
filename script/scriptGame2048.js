@@ -3,6 +3,18 @@ var score = 0;
 var rows = 4;
 var colums = 4;
 
+// const keyUp = document.getElementById("keyUp");
+// const keyRight = document.getElementById("keyRight");
+// const keyLeft = document.getElementById("keyLeft");
+// const keyDown = document.getElementById("keyDown");
+
+
+// keyUp.addEventListener('click', console.log('gge'))
+// keyLeft.addEventListener('click', slideLeft, setTwo)
+// keyRight.addEventListener('click', slideRight, setTwo)
+// keyDown.addEventListener('click', slideDown, setTwo)
+
+
 window.onload = function () {
   setGame();
 };
@@ -61,7 +73,7 @@ function setTwo() {
     if (board[r][c] == 0) {
       board[r][c] = 2;
       let tile = document.getElementById(r.toString() + "-" + c.toString());
-      tile.innerText = "2";
+      tile.innerHTML = "2";
       tile.classList.add("x2");
       found = true;
     }
@@ -94,6 +106,24 @@ document.addEventListener("keyup", (e) => {
     slideUp();
     setTwo();
   } else if (e.code == "ArrowDown") {
+    slideDown();
+    setTwo();
+  }
+  document.getElementById("score").innerText = score;
+});
+
+
+document.addEventListener("click", (e) => {
+  if (e.target == document.getElementById("keyLeft")) {
+    slideLeft();
+    setTwo();
+  } else if (e.target == document.getElementById("keyRight")) {
+    slideRight();
+    setTwo();
+  } else if (e.target == document.getElementById("keyUp")) {
+    slideUp();
+    setTwo();
+  } else if (e.target == document.getElementById("keyDown")) {
     slideDown();
     setTwo();
   }
