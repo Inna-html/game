@@ -3,21 +3,11 @@ var score = 0;
 var rows = 4;
 var colums = 4;
 
-// const keyUp = document.getElementById("keyUp");
-// const keyRight = document.getElementById("keyRight");
-// const keyLeft = document.getElementById("keyLeft");
-// const keyDown = document.getElementById("keyDown");
-
-
-// keyUp.addEventListener('click', console.log('gge'))
-// keyLeft.addEventListener('click', slideLeft, setTwo)
-// keyRight.addEventListener('click', slideRight, setTwo)
-// keyDown.addEventListener('click', slideDown, setTwo)
-
 
 window.onload = function () {
   setGame();
 };
+
 
 function setGame() {
   board = [
