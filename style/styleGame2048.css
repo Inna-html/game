@@ -7,7 +7,7 @@ body {
     height: 100%;
 
     background: #00000f;
-    background-image: url('../img/BG.png');
+    background-image: url('../img/planet2048/BG.png');
 }
 h2 {
     color: rgb(107, 107, 107);
@@ -74,12 +74,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: flex-end;
-    
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x4 { 
     background: #ac955f;
@@ -90,12 +84,6 @@ h2 {
     background-position: 10px 1px;
     background-size: 70px;
     justify-content: end;
-
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x8 { 
     background: #e79a9a;
@@ -106,12 +94,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x16 {
     background: #725740;
@@ -122,11 +104,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-
-
-
-    width: 80px;
-    height: 80px;
 }
 .x32 {
     background: #516e86;
@@ -137,11 +114,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x64 {
     background: #85b7cb;
@@ -152,11 +124,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-    
-
-
-    width: 80px;
-    height: 80px;
 } 
 .x128 {
     background: #545782;
@@ -167,11 +134,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x256 {
     background: #635743;
@@ -182,11 +144,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x512 {
     background: #6e8e93;
@@ -197,11 +154,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x1024 {
     background: #1d5463;
@@ -212,11 +164,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-   
-
-
-    width: 80px;
-    height: 80px;
 }
 .x2048 {
     background: #000f70;
@@ -227,11 +174,6 @@ h2 {
     background-position: 15px 5px;
     background-size: 60px;
     justify-content: end;
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x4096 {
     background: #1c4630;
@@ -242,11 +184,6 @@ h2 {
     background-position: 5px 5px;
     background-size: 80px;
     justify-content: end;
-    
-
-
-    width: 80px;
-    height: 80px;
 }
 .x8192 {
     background: #000815;
@@ -257,11 +194,6 @@ h2 {
     background-position: 5px 5px;
     background-size: 80px;
     justify-content: end;
-
-    
-
-    width: 80px;
-    height: 80px;
 }
 /* end colored tiles */
 
