@@ -1,8 +1,20 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    background: #5c4f3ed0;
     height: 100%;
+
+    background: #00000f;
+    background-image: url('../img/BG.png');
+}
+h2 {
+    color: rgb(107, 107, 107);
+    text-shadow: 1px 1px 1px #ffffff;
+
+    /* padding: 10px 0px 20px 0px; */
+    margin: 10px 0px;
 }
 .main {
     display: flex;
@@ -10,24 +22,21 @@ body {
     align-items: center;
     flex-direction: column; 
 }
-h2 {
-    margin: 20px 0px 0px 0px;
-}
 .hr {
-    max-width: 500px;
-
-    margin: 10px 0px;
+    margin: 0px 0px 10px 0px;
 }
 .hr .hrFlower {
-    width: 20px;
+    width: 30px;
 }
 
 #board {
-    width: 400px;
-    height: 400px;
+    width: 384px;
+    height: 384px;
 
-    background: #cdc1b5;
-    border: 6px solid rgb(52, 36, 26);
+    background: #1e1e1ed4;
+    border: 4px double rgb(52, 36, 26);
+    border-radius: 2px;
+
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -37,197 +46,230 @@ h2 {
 .tile {
     width: 90px;
     height: 90px;
-    border: 5px solid #bbada0;
+    border: 1px solid #000000;
+    margin: 2px;
+    border-radius: 4px;
 
-    font-size: 40px;
-    font-weight: bold;
+   box-shadow:  inset 0px -4px 8px rgb(0, 0, 0), 0px 2px 4px rgb(49, 49, 49);
+   background: #01050e95;
+
+    font-size: 30px;
+    font-weight: 900;
+    color: #030015;
+    text-shadow: 1px 1px 0px #ffffff ;
+
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
-image {
-    width: 40px;
-}
+
 /* colored tiles */
 .x2 { 
-    background: #3e6746;
-    /* background: #eee4da; */
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
+    background: #9ca49e;
 
-    background-image: url('../img/bgFlowers2048/8.png');
+    background-image: url('../img/planet/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: flex-end;
+    
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x4 { 
+    background: #ac955f;
+
+    background-image: url('../img/planet/2.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10px 1px;
+    background-size: 70px;
+    justify-content: end;
+
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x8 { 
+    background: #e79a9a;
+
+    background-image: url('../img/planet/3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x16 {
+    background: #725740;
+
+    background-image: url('../img/planet/4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+
+
+
+    width: 80px;
+    height: 80px;
+}
+.x32 {
+    background: #516e86;
+
+    background-image: url('../img/planet/5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x64 {
+    background: #85b7cb;
+
+    background-image: url('../img/planet/55.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+    
+
+
+    width: 80px;
+    height: 80px;
+} 
+.x128 {
+    background: #545782;
+
+    background-image: url('../img/planet/6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x256 {
+    background: #635743;
+
+    background-image: url('../img/planet/7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x512 {
+    background: #6e8e93;
+
+    background-image: url('../img/planet/8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x1024 {
+    background: #1d5463;
+
+    background-image: url('../img/planet/9.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+   
+
+
+    width: 80px;
+    height: 80px;
+}
+.x2048 {
+    background: #000f70;
+
+    background-image: url('../img/planet/10.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px 5px;
+    background-size: 60px;
+    justify-content: end;
+    
+
+
+    width: 80px;
+    height: 80px;
+}
+.x4096 {
+    background: #1c4630;
+
+    background-image: url('../img/planet/11.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 5px 5px;
     background-size: 80px;
     justify-content: end;
     
-}
-.x4 { 
-    background: #8fab73;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
 
-    background-image: url('../img/bgFlowers2048/21.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x8 { 
-    background: #284126;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
 
-    background-image: url('../img/bgFlowers2048/18.png'); /* grib */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x16 {
-    background: #725740;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/19.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x32 {
-    background: #7aa5c9;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/22.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x64 {
-    background: #d6e7ed;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/15.png'); /* list */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-} 
-.x128 {
-    background: #383a57;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/26.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x256 {
-    background: #5e8563;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/27.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x512 {
-    background: #b58585;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/30.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x1024 {
-    background: #625560;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/34.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x2048 {
-    background: #8a7af4;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/8.png'); /* star */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
-}
-.x4096 {
-    background: #f4b17a;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
-
-    background-image: url('../img/bgFlowers2048/33.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    background-size: 80px;
-    justify-content: end;
+    width: 80px;
+    height: 80px;
 }
 .x8192 {
-    background: #f4b17a;
-    color: #1f1301;
-    font-weight: 900;
-    font-size: 40px;
+    background: #000815;
 
-    background-image: url('../img/bgFlowers2048/allTile.png');
+    background-image: url('../img/planet/12.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 5px 5px;
     background-size: 80px;
     justify-content: end;
+
+    
+
+    width: 80px;
+    height: 80px;
 }
 /* end colored tiles */
 
 /* button */
 .game_pad {
-    width: 240px;
-    height: 140px;
-    background: #796247da;
+    width: 250px;
+    height: 150px;
+    background: #222239;
 
     position: relative;
     margin: 0 auto;
@@ -239,128 +281,100 @@ image {
     border: 4px #564129 double;
 }
 #keyUp {
-    width: 40px;
-    height: 40px;
-    
     position: absolute;
-    top: 0px;
+    top: 5px;
     left: 100px;
-
-    border-radius: 10px;
-    border: 4px double #493727;
-    
-    margin-top: 5px;
-    background: #947e66;
-}
+} 
 #keyRight {
-    width: 40px;
-    height: 40px;
-
     position: absolute;
     top: 40px;
-    right: 0px;
-
-    border-radius: 10px;
-    border: 4px double #493727;
-    
-    margin-right: 5px;
-    background: #947e66;
+    right: 5px;
 }
 #keyLeft {
-    width: 40px;
-    height: 40px;
-
     position: absolute;
     top: 40px;
-    left: 0px;
-
-    border-radius: 10px;
-    border: 4px double #493727;
-
-    margin-left: 5px;
-    background: #947e66;
+    left: 5px;
 }
 #keyDown {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+}
+#keyUp, #keyDown, #keyLeft, #keyRight {
     width: 40px;
     height: 40px;
-
-    position: absolute;
-    top: 90px;
-    left: 100px;
 
     border-radius: 10px;
     border: 4px double #493727;
 
     margin-bottom: 5px;
     background: #947e66;
+
+    box-shadow:  inset 0px -1px 8px rgb(69, 69, 69), 0px 2px 4px rgb(0, 0, 0);
 }
+#keyUp:hover, #keyDown:hover, #keyLeft:hover, #keyRight:hover {
+    background: #726250;
+    box-shadow:  inset 0px -1px 8px rgb(140, 140, 140), 0px 2px 2px rgb(0, 0, 0);
+
+}
+/* https://icons8.com/icon/set/arrow/family-hand-drawn   ##arrows icon## */
 /* button end */
 
 
 @media (max-width: 600px) {
     #board {
-        width: 304px;
-        height: 304px;
-    
-        background: #cdc1b5;
-        border: 6px solid rgb(52, 36, 26);
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
+        width: 344px;
+        height: 344px;
     }
     .tile {
-        width: 70px;
-        height: 70px;
-        border: 3px solid #bbada0;
+        width: 80px;
+        height: 80px;
     
-        font-size: 30px;
-    }
-    .hr .hrFlower {
-        width: 15px;
+        font-size: 24px;
     }
 
 
     /* colored tiles */
 .x2 { 
-    background-size: 60px;
+    background-size: 50px;
 }
 .x4 { 
     background-size: 60px;
 }
 .x8 { 
-    background-size: 60px;
+    background-size: 50px;
 }
 .x16 {
-    background-size: 60px;
+    background-size: 50px;
 }
 .x32 {
-    background-size: 60px;
+    background-size: 50px;
 }
 .x64 {
-    background-size: 60px;
+    background-size: 50px;
 } 
 .x128 {
-    background-size: 60px;
+    background-size: 50px;
 }
 .x256 {
-    background-size: 60px;
+    background-size: 50px;
 }
 .x512 {
-    background-size: 60px;
+    background-size: 50px;
 }
 .x1024 {
-    background-size: 60px;
+    background-size: 50px;
 }
 .x2048 {
-    background-size: 60px;
+    background-size: 50px;
 }
 .x4096 {
-    background-size: 60px;
+    background-size: 70px;
 }
 .x8192 {
-    background-size: 60px;
+    background-size: 70px;
 }
 /* end colored tiles */
 
-}
+} 
 
